@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+
+- story: scrape company happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: scrape_company
+    entities:
+    - company_name: "Microsoft"
+  - action: action_scrape_company
+  - intent: goodbye
+  - action: utter_goodbye
+

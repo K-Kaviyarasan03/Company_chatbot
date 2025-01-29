@@ -1,0 +1,22 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - scrape_company
+
+entities:
+  - company_name
+
+responses:
+  utter_greet:
+  - text: "hey how can i help you"
+
+  utter_goodbye:
+  - text: "Have a Nice Day"
+
+actions:
+  - action_scrape_company
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

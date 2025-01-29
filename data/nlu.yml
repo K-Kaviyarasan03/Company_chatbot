@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+
+- intent: scrape_company
+  examples: |
+    - tell me about [Microsoft](company_name)
+    - find information about [Apple](company_name)
+    - what can you tell me about [Tesla](company_name)
+    - search for [Google](company_name)
+    - get info about [Amazon](company_name)
+    - analyze [Meta](company_name)
+    - look up [Netflix](company_name)
+    - research [IBM](company_name)
+    - check [Intel](company_name)
+    - find details for [Adobe](company_name)
+    - [Nike](company_name)
